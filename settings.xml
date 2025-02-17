@@ -1,0 +1,32 @@
+<settings>
+	<servers>
+  <server>
+    <id>aleemuddin-Java-app-packages</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>aleemuddin-Java-app-packages</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>aleemuddin-Java-app-packages</id>
+        <url>https://aleemuddin-273354621210.d.codeartifact.us-east-2.amazonaws.com/maven/Java-app-packages/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+	<mirrors>
+  <mirror>
+    <id>aleemuddin-Java-app-packages</id>
+    <name>aleemuddin-Java-app-packages</name>
+    <url>https://aleemuddin-273354621210.d.codeartifact.us-east-2.amazonaws.com/maven/Java-app-packages/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
